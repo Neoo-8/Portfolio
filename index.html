@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Neo Legodi — Portfolio</title>
+  <meta name="description" content="Neo Legodi — Software Development student. Portfolio showcasing projects, skills and contact." />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#94a3b8; --glass: rgba(255,255,255,0.03);
+      --maxW:1100px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:linear-gradient(180deg,#071023 0%, #07102b 60%);color:#e6eef6;display:flex;justify-content:center;padding:40px 20px}
+    .wrap{width:100%;max-width:var(--maxW)}
+    header{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:center;margin-bottom:28px}
+    .me{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:28px;border-radius:14px;box-shadow:0 6px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.04)}
+    .avatar{width:92px;height:92px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:#051021}
+    h1{margin:0;font-size:22px}
+    h2{margin:0;font-size:14px;color:var(--muted)}
+    .links{margin-top:12px;display:flex;gap:8px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.03);cursor:pointer;text-decoration:none;color:inherit;font-size:14px}
+    .main{display:grid;grid-template-columns:1fr 360px;gap:24px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:22px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .section{margin-bottom:18px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);font-size:13px;border:1px solid rgba(255,255,255,0.02)}
+    .projects{display:flex;flex-direction:column;gap:12px}
+    .project{display:flex;flex-direction:column;border-radius:10px;padding:12px;background:linear-gradient(180deg, rgba(6,182,212,0.02), transparent);border:1px solid rgba(6,182,212,0.06)}
+    .project h3{margin:0;font-size:16px}
+    .muted{color:var(--muted);font-size:13px}
+    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:13px}
+    /* responsive */
+    @media (max-width:880px){header{grid-template-columns:1fr} .main{grid-template-columns:1fr} .links{flex-wrap:wrap}}
+    /* small utilities */
+    .contact-form input,.contact-form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;margin-top:8px}
+    .contact-form button{margin-top:10px;padding:10px 12px;border-radius:8px;border:none;background:var(--accent);color:#04202a;font-weight:700;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="me card">
+        <div style="display:flex;gap:16px;align-items:center">
+          <div class="avatar">NL</div>
+          <div>
+            <h1>Neo Legodi</h1>
+            <h2>Software Development Student — Rosebank College (Diploma, 2027 expected)</h2>
+            <div class="links">
+              <a class="btn" href="#about">About</a>
+              <a class="btn" href="#projects">Projects</a>
+              <a class="btn" id="resumeBtn" href="assets/Neo_Legodi_Resume-1.pdf" download>Download Resume</a>
+            </div>
+          </div>
+        </div>
+        <p class="muted" style="margin-top:12px">Johannesburg, South Africa • +27 72 078 9094 • jneo83771.gmail.com</p>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <a class="btn" href="https://github.com/Neoo-7" target="_blank">GitHub</a>
+          <a class="btn" href="https://linkedin.com/in/neoo-legodi-596268362" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      <div class="card" style="height:100%">
+        <h3 style="margin:0 0 8px 0">Profile</h3>
+        <p class="muted">Motivated and curious first-year Software Development student with a strong passion for technology and continuous learning. Fast learner with a solid work ethic and attention to detail. Seeking internships and hands-on opportunities.</p>
+        <div style="margin-top:14px">
+          <h4 style="margin:0 0 8px 0">Education</h4>
+          <p class="muted" style="margin:0">Diploma in Software Development — Rosebank College (Feb 2025 — Expected 2027)</p>
+        </div>
+        <div style="margin-top:12px">
+          <h4 style="margin:0 0 8px 0">Skills</h4>
+          <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript (Basic)</div>
+            <div class="skill">Python (Learning)</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">VS Code</div>
+            <div class="skill">Responsive Design</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div>
+        <section id="about" class="card section">
+          <h2 style="margin-top:0">About Me</h2>
+          <p class="muted">I'm Neo — currently studying software development at Rosebank College. I enjoy building small web projects to practise JavaScript and responsive design. I am open to internships and collaborative projects where I can apply my learning and grow as a developer.</p>
+          <div style="display:flex;gap:8px;margin-top:12px">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn" href="#contact">Contact Me</a>
+          </div>
+        </section>
+
+        <section id="projects" class="card section">
+          <h2 style="margin-top:0">Selected Projects</h2>
+          <div class="projects">
+            <article class="project">
+              <h3>Personal Portfolio Website</h3>
+              <p class="muted">HTML | CSS | JavaScript (Basic)</p>
+              <p class="muted">Created a simple, responsive website to showcase my learning journey. Includes About, Projects, and Contact form.</p>
+              <div style="margin-top:8px;display:flex;gap:8px">
+                <a class="btn" href="#" onclick="alert('Local demo: paste this project into a folder and open the HTML file in your browser')">Live demo</a>
+                <a class="btn" href="https://github.com/Neoo-7" target="_blank">View on GitHub</a>
+              </div>
+            </article>
+
+            <article class="project">
+              <h3>Basic Calculator Web App</h3>
+              <p class="muted">JavaScript | HTML | CSS</p>
+              <p class="muted">Built a functional calculator app to practise functions, event listeners, and layout styling.</p>
+            </article>
+
+            <!-- Future projects can be added here -->
+          </div>
+        </section>
+
+        <section class="card section">
+          <h2 style="margin-top:0">Certificates & Courses</h2>
+          <ul class="muted">
+            <li>Introduction to Web Development – Rosebank College (2025)</li>
+            <li>Microsoft Word & Excel Training - Rosebank College (2025)</li>
+            <li>GenAI course for Software Engineers – WeThinkCode (2025)</li>
+            <li>Cyber Job Simulation - Deloitte (2025)</li>
+          </ul>
+        </section>
+
+        <section class="card section" id="contact">
+          <h2 style="margin-top:0">Contact</h2>
+          <p class="muted">I'm open to internships, collaboration, and freelance opportunities. Send me a message:</p>
+          <form class="contact-form" onsubmit="sendMail(event)">
+            <label class="muted">Your name</label>
+            <input required id="name" placeholder="Your name" />
+            <label class="muted">Your email</label>
+            <input required id="email" type="email" placeholder="you@example.com" />
+            <label class="muted">Message</label>
+            <textarea required id="message" rows="4" placeholder="Hi Neo — I saw your portfolio and..."></textarea>
+            <button type="submit">Send email</button>
+            <p id="formNote" class="muted" style="margin-top:8px;font-size:13px">This button opens your email client (mailto). To receive messages directly on this site you'll need a server or Form service (GitHub Forms, Formspree, Netlify Forms).</p>
+          </form>
+        </section>
+
+      </div>
+
+      <aside>
+        <div class="card section">
+          <h3 style="margin-top:0">Profile & Attributes</h3>
+          <p class="muted">Fast learner · Good communicator · Pays attention to detail · Passionate about technology</p>
+        </div>
+
+        <div class="card section">
+          <h3 style="margin-top:0">Availability</h3>
+          <p class="muted">Currently seeking internships or assistance roles. Available to start immediately for short-term projects and internships.</p>
+        </div>
+
+        <div class="card section">
+          <h3 style="margin-top:0">Quick links</h3>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <a class="btn" href="assets/Neo_Legodi_Resume-1.pdf" download>Download Resume (PDF)</a>
+            <a class="btn" href="https://github.com/Neoo-7" target="_blank">GitHub profile</a>
+            <a class="btn" href="https://linkedin.com/in/neoo-legodi-596268362" target="_blank">LinkedIn profile</a>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      Made with care • Neo Legodi • <span class="muted">Johannesburg</span>
+    </footer>
+  </div>
+
+  <script>
+    function sendMail(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value.trim();
+      const email=document.getElementById('email').value.trim();
+      const message=document.getElementById('message').value.trim();
+      const subject=encodeURIComponent('Portfolio contact from ' + name);
+      const body=encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+      window.location.href = 'mailto:jneo83771.gmail.com?subject=' + subject + '&body=' + body;
+    }
+
+    // small UX: update resume link if the uploaded resume is available
+    (function(){
+      const rbtn=document.getElementById('resumeBtn');
+      // if file not found when hosted, user can place resume in assets/ folder
+      rbtn.addEventListener('click', (ev)=>{
+        // no-op so the link works normally
+      })
+    })();
+  </script>
+</body>
+</html>
